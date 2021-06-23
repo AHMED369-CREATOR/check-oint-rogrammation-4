@@ -1,0 +1,22 @@
+ALGORITHM  selection
+VAR
+arr: ARRAY_OF_INTEGER[100];
+i,j:INTEGER;
+BEGIN
+FOR i FROM 0 TO arr.length-1 STEP 1  DO
+    j:=1;
+    WHILE(j>0 AND arr[j]<arr[j-1])
+    permit (arr[j].arr[j-1])
+    END WHILE
+END_FOR
+
+END
+
+PROCEDURE permit (var a,b:INTEGER)
+VAR 
+temp:INEGER;
+BEGIN  
+   temp:=a;
+   a:=b;
+   b:=temp;
+END
